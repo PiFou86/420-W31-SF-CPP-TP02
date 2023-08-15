@@ -67,7 +67,7 @@ Tout partage de code, d'explication, de bouts de texte, etc. est considéré com
 
 ## 2 - Description du projet
 
-Vous devez coder un jeu de blackjack en C++.
+Vous devez coder un jeu de blackjack en C++. Il y aura le croupier (joué par le progamme) et un joueur.
 
 ### 2.1 - Règles du jeu
 
