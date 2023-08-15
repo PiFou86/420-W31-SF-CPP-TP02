@@ -8,7 +8,7 @@
 
 - La remise du travail doit être effectuée pour le dimanche 17 septembre 2023 à 23:59 avant minuit
 - Le projet est réalisé en équipe de 2 personnes. Me consulter pour une équipe de 1 personne
-- Vidéo de 10 minutes maximum illustrant la structure du code, l'algorithme de déroulement d'une partie, l'algorithme de choix de cartes du croupier et le fonctionnement (i.e. démonstration) du jeu
+- Vidéo de 10 minutes maximum illustrant la structure du code, l'algorithme de déroulement d'une partie, l'algorithme de choix de cartes du croupier, l'algorithme du mélange du jeu et le fonctionnement (i.e. démonstration) du jeu
 - Les vidéos doivent être déposées sur Youtube avec une option de partage « non listée »
 - Vous devez utiliser Git pour gérer vos sources
 - La structure de votre répertoire racine doit suivre la structure donnée dans le dépôt Git
