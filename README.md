@@ -71,7 +71,7 @@ Vous devez coder un jeu de blackjack en C++. Il y aura le croupier (joué par le
 
 ### 2.1 - Règles du jeu
 
-Le blackjack est un jeu de cartes où le but est d'obtenir 21 points ou le plus près possible de 21 points sans dépasser ce nombre. Le jeu se joue avec un ou plusieurs paquets de 52 cartes.
+Le blackjack est un jeu de cartes où le but est d'obtenir 21 points ou le plus près possible de 21 points sans dépasser ce nombre. Le jeu se joue avec un ou plusieurs paquets de 52 cartes (Un dans le cadre du TP avec mélange une fois le tas vide).
 
 Chaque carte a une valeur numérique et une couleur. Les cartes numérotées de 2 à 10 ont la valeur de leur numéro. Les figures (valet, dame et roi) ont la valeur de 10. L'as a la valeur de 1 ou 11.
 
