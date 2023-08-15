@@ -85,7 +85,7 @@ Dans votre version du jeu, il y a un seul joueur. Seules les cartes du joueur so
 
 Le joueur part avec un montant de 100\$. La mise de chaque partie est automatiquement de 10\$. Si le joueur perd, il perd sa mise. Si le joueur gagne, il gagne le double de sa mise. Si le joueur obtient un blackjack, il gagne 4 fois sa mise. Si le joueur et le croupier obtiennent un blackjack, la partie est nulle et le joueur récupère sa mise. Si le joueur n'a plus d'argent, la partie est terminée.
 
-Le joueur aura un maximum de cartes égal à 5.
+Le joueur aura un maximum de cartes égal à 7.
 
 ### 2.2 - Contraintes
 
