@@ -37,7 +37,6 @@ De manière plus simple, si vous avez suivi les directives de la section 1.1, vo
 - Pour les vidéos :
   - Elles doivent être déposées sur Youtube avec une option de partage « non listée »
   - Leurs liens doivent être indiqués dans le document word et dans le fichier "AUTHORS.md"
-- Le répertoire "documents" doit contenir votre rapport de TP
 
 ### 1.4 - Évaluation
 
