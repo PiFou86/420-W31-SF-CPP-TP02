@@ -83,12 +83,14 @@ namespace TGUIWSFML {
 		void Label::draw(sf::RenderWindow& renderWindow) {
 			Component::draw(renderWindow);
 
-			if (drawingDebug) {
-				renderWindow.draw(this->m_debugTextBounding);
-				renderWindow.draw(this->m_debugTextBaseline);
-			}
+			if (!hidden()) {
+				if (drawingDebug) {
+					renderWindow.draw(this->m_debugTextBounding);
+					renderWindow.draw(this->m_debugTextBaseline);
+				}
 
-			renderWindow.draw(this->m_SFMLText);
+				renderWindow.draw(this->m_SFMLText);
+			}
 		}
 
 		int Label::minWidth() const {

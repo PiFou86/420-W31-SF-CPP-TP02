@@ -25,4 +25,10 @@ private:
 	TGUIWSFML::Component::Button* m_drawingDebugOff;
 	TGUIWSFML::Component::Button* m_drawingDebugOn;
 	TGUIWSFML::Component::Button* m_toogleFPSLimit;
+
+	TGUIWSFML::Component::Button* m_cacherLabel;
+	TGUIWSFML::Component::Button* m_afficherLabel;
+
+	TGUIWSFML::Component::Label* m_labelAAfficherOuNon;
+
 };

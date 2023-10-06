@@ -13,7 +13,10 @@ Demo01::Demo01()
 	m_labelRightAligned(nullptr),
 	m_imageAsCoeur(nullptr),
 	m_drawingDebugOff(nullptr),
-	m_drawingDebugOn(nullptr)
+	m_drawingDebugOn(nullptr),
+	m_cacherLabel(nullptr),
+	m_afficherLabel(nullptr),
+	m_labelAAfficherOuNon(nullptr)
 {
 	;
 }
@@ -87,6 +90,19 @@ void Demo01::componentsInitialization() {
 	this->m_toogleFPSLimit->overBackgroundColor(sf::Color(21, 215, 152));
 	this->m_toogleFPSLimit->normalBackgroundColor(sf::Color(93, 217, 177));
 
+	// m_cacherLabel
+	this->m_cacherLabel = new TGUIWSFML::Component::Button(1, 350, 300, 40, "Afficher label");
+	this->addComponent(this->m_cacherLabel);
+	this->m_cacherLabel->addMouseClickHandler([&](const TGUIWSFML::Event::MouseEvent& me) { this->m_labelAAfficherOuNon->show(); });
+
+	// m_afficherLabel
+	this->m_afficherLabel = new TGUIWSFML::Component::Button(320, 350, 300, 40, "Cacher label");
+	this->addComponent(this->m_afficherLabel);
+	this->m_afficherLabel->addMouseClickHandler([&](const TGUIWSFML::Event::MouseEvent& me) { this->m_labelAAfficherOuNon->hide(); });
+
+	// m_imageAsCoeur
+	this->m_labelAAfficherOuNon = new TGUIWSFML::Component::Label(1, 400, 15, 15, "Label à afficher / cacher");
+	this->addComponent(this->m_labelAAfficherOuNon);
 }
 
 Demo01::~Demo01() {

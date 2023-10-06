@@ -11,7 +11,8 @@ namespace TGUIWSFML {
 		: m_onOverBackgroundChange(false),
 		m_left(left), m_top(top), m_width(width), m_height(height),
 		m_backgroundTexture(nullptr), m_overBackgroundTexture(nullptr), m_currentBackgroundTexture(nullptr),
-		m_debugBoundingBox()
+		m_debugBoundingBox(),
+		m_hidden(false)
 	{
 		this->normalBackgroundColor(sf::Color(0xbf, 0xbf, 0xbf));
 		this->backgroundColor(this->normalBackgroundColor());
@@ -35,12 +36,14 @@ namespace TGUIWSFML {
 	}
 
 	void GUIElement::draw(sf::RenderWindow& renderWindow) {
-		for (Component::Component* componentToDraw : this->m_components) {
-			componentToDraw->draw(renderWindow);
-		}
+		if (!hidden()) {
+			for (Component::Component* componentToDraw : this->m_components) {
+				componentToDraw->draw(renderWindow);
+			}
 
-		if (this->drawingDebug) {
-			renderWindow.draw(this->m_debugBoundingBox);
+			if (this->drawingDebug) {
+				renderWindow.draw(this->m_debugBoundingBox);
+			}
 		}
 	}
 

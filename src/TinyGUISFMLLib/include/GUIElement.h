@@ -110,6 +110,9 @@ namespace TGUIWSFML {
 		inline sf::Texture* currentBackgroundTexture() const {
 			return this->m_currentBackgroundTexture;
 		}
+		inline void hide() { this->m_hidden = true; }
+		inline void show() { this->m_hidden = false; }
+		inline bool hidden() { return this->m_hidden; }
 
 		virtual void onMouseMove(const Event::MouseEvent& mouseEvent);
 		virtual void onMouseLeft(const Event::MouseEvent& mouseEvent);
@@ -170,6 +173,8 @@ namespace TGUIWSFML {
 		sf::Texture* m_currentBackgroundTexture;
 
 		sf::RectangleShape m_debugBoundingBox;
+
+		bool m_hidden;
 
 		static std::map<std::string, sf::Font*> fonts;
 		static std::map<std::string, sf::Texture*> textures;

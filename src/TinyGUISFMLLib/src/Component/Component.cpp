@@ -24,12 +24,14 @@ namespace TGUIWSFML {
 		void Component::draw(sf::RenderWindow& renderWindow) {
 			GUIElement::draw(renderWindow);
 
-			this->m_border.setOutlineThickness(this->outlineThickness());
-			this->m_border.setOutlineColor(this->outlineColor());
-			this->m_border.setFillColor(this->backgroundColor());
-			this->m_border.setTexture(this->currentBackgroundTexture());
+			if (!hidden()) {
+				this->m_border.setOutlineThickness(this->outlineThickness());
+				this->m_border.setOutlineColor(this->outlineColor());
+				this->m_border.setFillColor(this->backgroundColor());
+				this->m_border.setTexture(this->currentBackgroundTexture());
 
-			renderWindow.draw(this->m_border);
+				renderWindow.draw(this->m_border);
+			}
 		}
 
 	}
