@@ -47,7 +47,8 @@ namespace TGUIWSFML {
 		virtual int minHeight() const = 0;
 
 		inline virtual bool inBounds(const int& x, const int& y) const {
-			return x >= this->m_left
+			return !this->hidden() 
+				&& x >= this->m_left
 				&& x <= this->m_left + this->m_width
 				&& y >= this->m_top
 				&& y <= this->m_top + this->m_height;
@@ -112,7 +113,7 @@ namespace TGUIWSFML {
 		}
 		inline void hide() { this->m_hidden = true; }
 		inline void show() { this->m_hidden = false; }
-		inline bool hidden() { return this->m_hidden; }
+		inline bool hidden() const { return this->m_hidden; }
 
 		virtual void onMouseMove(const Event::MouseEvent& mouseEvent);
 		virtual void onMouseLeft(const Event::MouseEvent& mouseEvent);

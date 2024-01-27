@@ -32,6 +32,8 @@ namespace TGUIWSFML {
 				while (loop());
 			}
 
+			inline void forceRender() { this->render(); }
+
 			Window(const Window&) = delete;
 			Window(Window&&) = delete;
 			Window& operator=(const Window&) = delete;
